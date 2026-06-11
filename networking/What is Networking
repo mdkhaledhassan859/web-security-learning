@@ -1,0 +1,98 @@
+# What is Networking?
+
+## Platform
+
+TryHackMe
+
+## Room
+
+What is Networking?
+
+## Objective
+
+Learn the fundamentals of computer networking, how devices communicate, and the basic concepts used in modern networks.
+
+## Topics Covered
+
+- What is a Network?
+- Internet Basics
+- IP Addresses
+- Private and Public Networks
+- Network Devices
+- Ports and Protocols
+
+## Key Learning Points
+
+### What is a Network?
+
+A network is a collection of devices connected together to share information and resources.
+
+Examples:
+- Home Network
+- Office Network
+- Internet
+
+### IP Address
+
+An IP address is a unique identifier assigned to a device on a network.
+
+Example:
+
+- IPv4: 192.168.1.10
+- IPv6: 2001:db8::1
+
+### Public vs Private IP
+
+#### Private IP
+
+Used inside local networks.
+
+Examples:
+
+- 192.168.0.0/16
+- 172.16.0.0/12
+- 10.0.0.0/8
+
+#### Public IP
+
+Used on the Internet and assigned by Internet Service Providers (ISPs).
+
+### Network Devices
+
+#### Router
+
+Connects different networks and routes traffic.
+
+#### Switch
+
+Connects devices within the same local network.
+
+#### Firewall
+
+Filters network traffic and enforces security rules.
+
+### Ports and Protocols
+
+Common protocols:
+
+| Protocol | Port |
+|-----------|------|
+| HTTP | 80 |
+| HTTPS | 443 |
+| SSH | 22 |
+| FTP | 21 |
+| DNS | 53 |
+
+## Why Networking Matters in Cyber Security
+
+Understanding networking helps security professionals:
+
+- Identify network services
+- Perform reconnaissance
+- Analyze traffic
+- Detect attacks
+- Secure systems
+
+## Lessons Learned
+
+This room introduced the fundamentals of networking, including IP addressing, network devices, protocols, and their importance in cybersecurity.
