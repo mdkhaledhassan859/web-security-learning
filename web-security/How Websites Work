@@ -1,0 +1,181 @@
+# How Websites Work
+
+## Platform
+
+TryHackMe
+
+## Category
+
+Web Security
+
+## Difficulty
+
+Easy
+
+## Objective
+
+Understand how websites work, how browsers communicate with web servers, and the technologies involved in delivering web content to users.
+
+## Introduction
+
+Every time a user visits a website, multiple processes happen behind the scenes. Understanding these processes helps security professionals identify weaknesses and perform effective web application security testing.
+
+## Website Communication Flow
+
+Basic Flow:
+
+User → Browser → DNS → Web Server → Database → Response
+
+1. User enters a URL in the browser.
+2. DNS resolves the domain name into an IP address.
+3. The browser sends an HTTP request.
+4. The web server processes the request.
+5. The application retrieves data from the database if necessary.
+6. The server sends an HTTP response.
+7. The browser renders the webpage.
+
+## URL Structure
+
+Example:
+
+https://www.example.com/login
+
+Components:
+
+- Protocol: https
+- Domain: www.example.com
+- Path: /login
+
+## Frontend Technologies
+
+Frontend is what users see and interact with.
+
+Common Technologies:
+
+- HTML
+- CSS
+- JavaScript
+
+Frameworks:
+
+- Angular
+- React
+- Vue.js
+
+## Backend Technologies
+
+Backend handles application logic and data processing.
+
+Examples:
+
+- ASP.NET
+- PHP Laravel
+- Node.js
+- Django
+- Spring Boot
+
+## Databases
+
+Databases store application data.
+
+Examples:
+
+- SQL Server
+- MySQL
+- PostgreSQL
+- MongoDB
+
+## Static vs Dynamic Websites
+
+### Static Website
+
+Displays fixed content.
+
+Example:
+
+- Portfolio Website
+- Documentation Website
+
+### Dynamic Website
+
+Content changes based on user actions or database data.
+
+Example:
+
+- Facebook
+- E-commerce Sites
+- Banking Applications
+
+## HTTP Requests and Responses
+
+### Request
+
+Browser sends:
+
+- Method
+- URL
+- Headers
+- Body
+
+### Response
+
+Server returns:
+
+- Status Code
+- Headers
+- Content
+
+## Cookies and Sessions
+
+### Cookies
+
+Stored in the user's browser.
+
+Common Uses:
+
+- Authentication
+- User Preferences
+
+### Sessions
+
+Stored on the server.
+
+Used to maintain user state after login.
+
+## Common Website Components
+
+- Login Page
+- Registration Page
+- Dashboard
+- Search Functionality
+- Contact Forms
+- APIs
+
+## Common Security Risks
+
+Understanding how websites work helps identify:
+
+- SQL Injection
+- Cross-Site Scripting (XSS)
+- Cross-Site Request Forgery (CSRF)
+- Authentication Weaknesses
+- Session Management Issues
+- Insecure Direct Object References (IDOR)
+
+## Why This Matters for Pentesting
+
+Web application penetration testing focuses on understanding how websites function and identifying weaknesses in:
+
+- Authentication
+- Authorization
+- Input Validation
+- Session Handling
+- Data Processing
+
+## Personal Insight
+
+As a Full Stack Software Engineer, I found this topic particularly valuable because understanding how web applications are built helps identify how they can be attacked and secured.
+
+## Lessons Learned
+
+This room provided a solid foundation for understanding website architecture, client-server communication, and the technologies involved in modern web applications.
