@@ -1,0 +1,225 @@
+#  Passive Reconnaissance (OSINT) in Penetration Testing
+
+Passive reconnaissance is the first phase of ethical hacking where information about a target is collected without directly interacting with its systems. The goal is to gather as much publicly available data as possible while remaining undetected.
+
+---
+
+##  What is Passive Reconnaissance?
+
+Passive reconnaissance (or passive recon) involves collecting information from publicly available sources without sending any traffic to the target systems.
+
+Unlike active scanning, it does not interact directly with the target infrastructure.
+
+---
+
+##  Objectives
+
+- Gather information without detection
+- Identify attack surface
+- Map infrastructure and technologies
+- Collect employee and domain information
+- Support later phases (scanning and exploitation)
+
+---
+
+##  Sources of Passive Recon
+
+### 1. Search Engines
+Search engines can reveal sensitive or forgotten information.
+
+Examples:
+- Google dorking
+- Bing search
+- DuckDuckGo
+
+**Common Google Dorks:**
+- `site:example.com`
+- `filetype:pdf example`
+- `intitle:"index of"`
+- `inurl:admin`
+
+---
+
+### 2. WHOIS Information
+WHOIS databases provide domain registration details.
+
+Information includes:
+- Domain owner (if not hidden)
+- Registrar
+- Registration/expiry dates
+- Name servers
+
+Tools:
+- `whois`
+- ICANN WHOIS lookup
+
+---
+
+### 3. DNS Enumeration (Passive)
+DNS records can reveal infrastructure details.
+
+Common records:
+- A / AAAA (IP addresses)
+- MX (mail servers)
+- NS (name servers)
+- TXT (verification records)
+
+Tools:
+- SecurityTrails
+- DNSdumpster
+
+---
+
+### 4. Social Media Intelligence
+Social platforms often expose:
+- Employee names
+- Job roles
+- Internal tools
+- Company structure
+
+Platforms:
+- LinkedIn
+- Twitter (X)
+- Facebook
+- GitHub
+
+---
+
+### 5. Public Code Repositories
+Developers sometimes leak:
+- API keys
+- Configuration files
+- Internal endpoints
+
+Platforms:
+- GitHub
+- GitLab
+- Bitbucket
+
+---
+
+### 6. Website Analysis
+Even without active scanning, websites reveal useful data.
+
+Check:
+- Page source code
+- Comments in HTML
+- JavaScript files
+- Robots.txt
+- Sitemap.xml
+
+---
+
+### 7. Metadata Extraction
+Files publicly available online may contain metadata.
+
+Example files:
+- PDFs
+- Word documents
+- Images
+
+Metadata may include:
+- Author name
+- Software used
+- File paths
+- Timestamps
+
+Tools:
+- ExifTool
+- Metadata2Go
+
+---
+
+### 8. Job Postings
+Job listings often reveal internal tech stack.
+
+Look for:
+- Programming languages
+- Cloud providers
+- Security tools
+- Infrastructure details
+
+---
+
+### 9. Public Breach Databases
+Leaks from past breaches may expose credentials or data.
+
+Examples:
+- Have I Been Pwned
+- Dehashed (paid service)
+
+---
+
+##  Common Passive Recon Tools
+
+### OSINT Frameworks
+- theHarvester
+- Maltego
+- Recon-ng
+
+### Web Tools
+- SecurityTrails
+- Shodan (limited passive use)
+- BuiltWith
+
+### Metadata Tools
+- ExifTool
+- FOCA
+
+---
+
+##  Passive Recon Workflow
+
+1. Identify target domain
+2. Perform WHOIS lookup
+3. Gather DNS records
+4. Search for subdomains (OSINT sources)
+5. Analyze social media presence
+6. Review public code repositories
+7. Extract metadata from documents
+8. Document all findings
+
+---
+
+##  Information You Can Discover
+
+- Domain infrastructure
+- Subdomains and services
+- Email formats
+- Employee names and roles
+- Technology stack
+- Publicly exposed files
+- API endpoints (sometimes leaked)
+
+---
+
+##  Limitations
+
+- Data may be outdated
+- Not always accurate
+- Restricted by privacy protections (WHOIS privacy, GDPR)
+- Requires validation in later phases
+
+---
+
+##  Ethical Considerations
+
+- Only collect publicly available data
+- Do not bypass authentication or protections
+- Respect privacy laws and regulations
+- Use findings only for authorized testing
+
+---
+
+##  Tools to Practice OSINT
+
+- TryHackMe OSINT rooms
+- Hack The Box OSINT challenges
+- Google Dorking practice labs
+
+---
+
+##  Summary
+
+Passive reconnaissance is a critical first step in penetration testing. It allows security professionals to build a detailed profile of a target without detection, forming the foundation for deeper security assessments.
+
