@@ -1,0 +1,275 @@
+#  Windows Fundamentals – Part 2
+
+This document continues the introduction to Windows systems with a focus on services, processes, startup behavior, event logs, and deeper system administration concepts relevant to cybersecurity and penetration testing.
+
+---
+
+##  Overview
+
+Windows systems run many background components that manage applications, security, networking, and system resources. Understanding these components is essential for troubleshooting and security analysis.
+
+---
+
+##  Windows Processes vs Services
+
+###  Processes
+A process is a running instance of a program.
+
+- Temporary (starts and stops)
+- User or system initiated
+- Visible in Task Manager
+
+Example:
+- `notepad.exe`
+- `chrome.exe`
+
+---
+
+###  Services
+Services are long-running background processes.
+
+- Start automatically or manually
+- Run without user interaction
+- Managed by the Service Control Manager
+
+Example services:
+- Windows Update
+- Windows Defender
+- Print Spooler
+
+---
+
+##  Task Manager Deep Dive
+
+Open Task Manager:
+
+Ctrl + Shift + Esc
+
+
+### Tabs:
+- **Processes** → active programs
+- **Performance** → CPU, RAM, Disk usage
+- **Startup** → auto-start applications
+- **Users** → logged-in users
+- **Details** → advanced process info
+- **Services** → running services
+
+---
+
+##  Service Management Tools
+
+### Services Console
+
+Open:
+
+services.msc
+
+
+### Common actions:
+- Start
+- Stop
+- Restart
+- Disable
+- Set startup type
+
+### Startup Types:
+- Automatic
+- Manual
+- Disabled
+
+---
+
+##  Windows Boot Process
+
+Windows boot sequence:
+
+1. BIOS/UEFI initializes hardware
+2. Bootloader starts (Windows Boot Manager)
+3. Winload.exe loads kernel
+4. Kernel initializes system
+5. Services start
+6. User login screen appears
+
+---
+
+##  Startup Programs
+
+Programs that run automatically on boot:
+
+### Locations:
+- Task Manager → Startup tab
+- Registry keys
+- Startup folder
+
+Startup folder path:
+
+C:\Users<User>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+
+
+---
+
+##  Windows Event Logs
+
+Event logs record system activity.
+
+Open Event Viewer:
+
+eventvwr.msc
+
+
+---
+
+### Log Types:
+
+- **Application logs**
+- **Security logs**
+- **System logs**
+- **Setup logs**
+
+---
+
+### Common Event IDs:
+
+- 4624 → Successful login
+- 4625 → Failed login
+- 7045 → New service installed
+- 1102 → Audit log cleared
+
+---
+
+##  Process Monitoring Tools
+
+### Tasklist (CMD)
+
+tasklist
+
+
+### Resource Monitor
+
+resmon
+
+
+Shows:
+- CPU usage
+- Memory usage
+- Disk activity
+- Network usage
+
+---
+
+##  Process Investigation
+
+### Check process details:
+- PID (Process ID)
+- Parent process
+- Memory usage
+- User context
+
+CMD:
+
+tasklist /v
+
+
+---
+
+##  Windows Registry (Deeper View)
+
+Registry stores configuration for:
+- Users
+- Software
+- Hardware
+- Services
+
+### Key areas for security analysis:
+- Startup persistence
+- Installed software
+- System policies
+
+---
+
+##  Networking in Windows
+
+### View active connections:
+
+netstat -ano
+
+
+### Identify process using PID:
+
+tasklist | findstr <PID>
+
+
+---
+
+##  Windows Security Components
+
+- Windows Defender Antivirus
+- Firewall
+- SmartScreen
+- User Account Control (UAC)
+
+---
+
+##  User Account Control (UAC)
+
+UAC prevents unauthorized system changes.
+
+- Prompts for admin permission
+- Protects system files
+- Helps prevent malware execution
+
+---
+
+##  Performance Monitoring
+
+### Tools:
+- Task Manager
+- Performance Monitor (`perfmon`)
+- Resource Monitor
+
+Performance Monitor tracks:
+- CPU usage
+- Disk I/O
+- Memory consumption
+- Network activity
+
+---
+
+##  Suspicious Activity Indicators
+
+- Unknown services
+- High CPU usage by unknown process
+- Unusual startup programs
+- Multiple failed login attempts
+- Unknown network connections
+
+---
+
+##  Useful Commands Summary
+
+
+tasklist
+taskkill /PID <id> /F
+netstat -ano
+sc query
+services.msc
+eventvwr.msc
+
+
+---
+
+##  Best Practices
+
+- Regularly review startup programs
+- Monitor event logs for anomalies
+- Disable unnecessary services
+- Keep system updated
+- Use least privilege accounts
+
+---
+
+##  Summary
+
+Windows system internals such as processes, services, startup behavior, and logs are critical for both system administration and cybersecurity investigations. Understanding them helps in detecting threats and improving system security.
+
+---
