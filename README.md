@@ -132,7 +132,6 @@ blue-team/
 - Complete advanced Web Security Labs
 - Contribute security research and writeups
 - Start working as a Penetration Tester / Application Security Engineer
-- Earn income through Cyber Security and Freelancing
 
 ---
 
