@@ -1,0 +1,268 @@
+## Windows Fundamentals – Part 3
+
+This document covers deeper Windows concepts including security mechanisms, privilege levels, file permissions (NTFS), Active Directory basics, persistence techniques, and common system hardening principles relevant to cybersecurity and penetration testing.
+
+---
+
+## Overview
+
+Windows Fundamentals Part 3 focuses on how Windows enforces security, manages identities, and controls access to resources. These concepts are essential for understanding both defense and attack techniques in enterprise environments.
+
+---
+
+## Windows Security Model
+
+Windows security is based on:
+
+- Users and groups
+- Access tokens
+- Permissions (ACLs)
+- Security policies
+
+Every action is evaluated based on the user’s identity and privileges.
+
+---
+
+## Users, Groups, and Privileges
+
+### User Types:
+- **Administrator** → full system control
+- **Standard User** → limited privileges
+- **SYSTEM** → highest internal privilege level
+- **Guest** → highly restricted
+
+---
+
+### Built-in Groups:
+- Administrators
+- Users
+- Remote Desktop Users
+- Guests
+- Power Users (legacy)
+
+---
+
+## Access Tokens
+
+When a user logs in, Windows generates an **access token** containing:
+
+- User identity (SID)
+- Group memberships
+- Privileges
+- Integrity level
+
+This token is used to decide what actions are allowed.
+
+---
+
+## NTFS Permissions
+
+NTFS (New Technology File System) controls file-level security.
+
+### Common permissions:
+- Full Control
+- Modify
+- Read & Execute
+- Read
+- Write
+
+---
+
+### Viewing Permissions:
+- Right-click file → Properties → Security tab
+
+---
+
+### Advanced Permissions:
+- Traverse Folder
+- Delete Subfolders
+- Take Ownership
+- Change Permissions
+
+---
+
+## Access Control Lists (ACLs)
+
+ACLs define who can access a file or resource.
+
+### Types:
+- **DACL (Discretionary ACL)** → defines allowed/denied access
+- **SACL (System ACL)** → defines auditing rules
+
+---
+
+## User Account Control (UAC)
+
+UAC prevents unauthorized system changes.
+
+- Runs apps with standard privileges by default
+- Prompts for elevation when needed
+- Helps prevent malware execution
+
+---
+
+## Windows Integrity Levels
+
+Integrity levels restrict what processes can modify:
+
+- Low
+- Medium
+- High
+- System
+
+Example:
+- Browser runs at Medium integrity
+- System services run at High/System
+
+---
+
+## Windows Registry (Advanced)
+
+The registry stores system configuration and persistence data.
+
+### Important hives:
+- `HKLM` → system-wide settings
+- `HKCU` → current user settings
+- `HKCR` → file associations
+- `HKU` → all user profiles
+
+---
+
+### Security relevance:
+Attackers may use registry keys for:
+- Persistence
+- Startup execution
+- Policy bypass attempts
+
+---
+
+## Active Directory Basics
+
+Active Directory (AD) is used in enterprise Windows networks.
+
+### Key components:
+- Domain Controllers
+- Users and Groups
+- Organizational Units (OUs)
+- Group Policy Objects (GPOs)
+
+---
+
+### Domain Concepts:
+- **Domain** → centralized network
+- **Forest** → collection of domains
+- **Tree** → hierarchical domains
+
+---
+
+## Group Policy (GPO)
+
+GPOs control system settings across a domain.
+
+Used for:
+- Password policies
+- Software restrictions
+- Security configurations
+- User restrictions
+
+---
+
+## Persistence Mechanisms (Security Perspective)
+
+Common persistence areas:
+
+- Startup folders
+- Registry Run keys
+- Scheduled Tasks
+- Services
+- Login scripts
+
+---
+
+### Example Registry Run Key:
+
+HKCU\Software\Microsoft\Windows\CurrentVersion\Run
+
+
+---
+
+## Windows Services Security
+
+Services can run with elevated privileges.
+
+### Service security risks:
+- Misconfigured permissions
+- Unquoted service paths
+- Weak service accounts
+
+---
+
+## Windows Event Logs (Security Focus)
+
+Event Viewer is critical for monitoring security events.
+
+### Key logs:
+- Security
+- System
+- Application
+
+---
+
+### Important Event IDs:
+- 4624 → Successful login
+- 4625 → Failed login
+- 4672 → Special privileges assigned
+- 7045 → New service installed
+
+---
+
+## Windows Defender & Security Tools
+
+### Built-in protections:
+- Antivirus (Defender)
+- Firewall
+- SmartScreen
+- Exploit Protection
+
+---
+
+## Credential Storage
+
+Windows stores credentials in:
+
+- SAM database (local accounts)
+- LSASS process (in-memory credentials)
+
+ These are high-value targets in attacks.
+
+---
+
+## System Hardening Practices
+
+- Disable unnecessary services
+- Enforce strong password policies
+- Enable logging and auditing
+- Restrict admin privileges
+- Use least privilege principle
+
+---
+
+## Useful Commands
+
+
+whoami /priv
+whoami /groups
+net user
+net localgroup administrators
+Get-LocalUser
+Get-LocalGroup
+Get-Process
+
+---
+
+## Common Misconfigurations
+Excessive admin privileges
+Weak service permissions
+Open SMB shares
+Unrestricted registry access
+Disabled logging
