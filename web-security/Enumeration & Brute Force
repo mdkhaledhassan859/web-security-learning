@@ -1,0 +1,164 @@
+# Enumeration & Brute Force
+
+## Platform
+
+TryHackMe
+
+## Category
+
+Web Security / Reconnaissance
+
+## Difficulty
+
+Easy
+
+## Objective
+
+Understand how attackers gather information about systems, users, and services through enumeration techniques and how brute-force attacks target authentication mechanisms.
+
+## What is Enumeration?
+
+Enumeration is the process of gathering detailed information about a target system.
+
+The goal is to identify:
+
+- Usernames
+- Services
+- Open Ports
+- Hostnames
+- Shared Resources
+- Application Information
+
+Enumeration is one of the most important phases of penetration testing.
+
+## Why Enumeration Matters
+
+Attackers often spend more time gathering information than exploiting vulnerabilities.
+
+The more information collected, the easier it becomes to identify weaknesses.
+
+## Types of Enumeration
+
+### User Enumeration
+
+Discovering valid usernames through application behavior.
+
+Example:
+
+Different login error messages may reveal whether a username exists.
+
+### Service Enumeration
+
+Identifying running services on a target.
+
+Examples:
+
+- HTTP
+- HTTPS
+- SSH
+- FTP
+- SMTP
+
+### Directory Enumeration
+
+Finding hidden files and directories on web applications.
+
+Common Tools:
+
+- Gobuster
+- Dirsearch
+- Feroxbuster
+
+## Brute Force Attacks
+
+A brute-force attack attempts many password combinations until the correct one is found.
+
+Target Examples:
+
+- Login Pages
+- SSH Services
+- FTP Servers
+- Email Accounts
+
+## Common Brute Force Techniques
+
+### Dictionary Attack
+
+Uses a predefined wordlist.
+
+Example:
+
+- rockyou.txt
+
+### Credential Stuffing
+
+Uses leaked username/password combinations.
+
+### Password Spraying
+
+Attempts a few common passwords against many users.
+
+## Risks of Brute Force Attacks
+
+- Unauthorized Access
+- Account Takeover
+- Data Breaches
+- Service Disruption
+
+## Defensive Measures
+
+### Strong Password Policies
+
+Use complex and unique passwords.
+
+### Multi-Factor Authentication (MFA)
+
+Adds an additional layer of security.
+
+### Account Lockout
+
+Temporarily locks accounts after multiple failed attempts.
+
+### Rate Limiting
+
+Restricts repeated login attempts.
+
+### Monitoring and Logging
+
+Detects suspicious authentication activity.
+
+## Tools Commonly Used
+
+### Enumeration
+
+- Nmap
+- Gobuster
+- DNSRecon
+- Amass
+
+### Password Testing
+
+- Hydra
+- Burp Suite Intruder
+- Medusa
+
+## Why This Matters in Pentesting
+
+Enumeration is often the first step in identifying attack surfaces.
+
+Understanding brute-force attacks helps security professionals:
+
+- Assess authentication security
+- Identify weak account protections
+- Recommend security improvements
+
+## Personal Insight
+
+This room highlighted the importance of information gathering and authentication security. Effective enumeration often provides valuable information that can be used during later phases of a security assessment.
+
+## Lessons Learned
+
+- Enumeration is a critical reconnaissance activity.
+- User and service information can leak through misconfigurations.
+- Weak authentication controls increase security risks.
+- Strong password policies and MFA significantly improve security.
