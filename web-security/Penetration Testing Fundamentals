@@ -1,0 +1,187 @@
+# 🛡️ Penetration Testing Fundamentals
+
+This document covers the core concepts, methodology, and tools used in ethical hacking and penetration testing. It is intended for beginners who want to understand how security assessments are performed in real-world environments.
+
+---
+
+## 📌 What is Penetration Testing?
+
+Penetration Testing (or **pentesting**) is the practice of simulating cyberattacks on a system, network, or application to identify security vulnerabilities before malicious attackers can exploit them.
+
+It is performed with permission and follows a structured process to improve security posture.
+
+---
+
+## 🎯 Goals of Penetration Testing
+
+- Identify security weaknesses
+- Exploit vulnerabilities in a controlled manner
+- Evaluate the impact of attacks
+- Provide remediation recommendations
+- Strengthen overall system security
+
+---
+
+## 🧭 Types of Penetration Testing
+
+### 1. Black Box Testing
+- Tester has no prior knowledge of the system
+- Simulates an external attacker
+
+### 2. White Box Testing
+- Full access to source code, architecture, and credentials
+- Simulates an internal audit
+
+### 3. Gray Box Testing
+- Partial knowledge of the system
+- Combination of black and white box approaches
+
+---
+
+## 🔄 Penetration Testing Methodology
+
+### 1. Reconnaissance (Information Gathering)
+Collect information about the target.
+
+**Techniques:**
+- WHOIS lookup
+- DNS enumeration
+- Social engineering
+- OSINT (Open Source Intelligence)
+
+---
+
+### 2. Scanning & Enumeration
+Identify live hosts, open ports, and services.
+
+**Common tools:**
+- `Nmap`
+- `Netcat`
+- `Masscan`
+
+---
+
+### 3. Vulnerability Analysis
+Find weaknesses in systems and applications.
+
+**Examples:**
+- Outdated software
+- Misconfigurations
+- Weak credentials
+
+Tools:
+- Nessus
+- OpenVAS
+- Nikto
+
+---
+
+### 4. Exploitation
+Actively attempt to exploit identified vulnerabilities.
+
+Tools:
+- Metasploit Framework
+- Custom scripts
+- Exploit databases
+
+⚠️ This step must be done carefully and only in authorized environments.
+
+---
+
+### 5. Post-Exploitation
+Maintain access and analyze the compromised system.
+
+Activities:
+- Privilege escalation
+- Data extraction
+- Lateral movement
+- Persistence (ethical testing only)
+
+---
+
+### 6. Reporting
+Document findings and provide remediation steps.
+
+A good report includes:
+- Executive summary
+- Technical details
+- Risk ratings
+- Proof of concept (PoC)
+- Fix recommendations
+
+---
+
+## 🧰 Common Penetration Testing Tools
+
+### Network & Scanning
+- Nmap
+- Wireshark
+
+### Web Application Testing
+- Burp Suite
+- OWASP ZAP
+
+### Exploitation
+- Metasploit Framework
+
+### Password Attacks
+- John the Ripper
+- Hashcat
+
+### OSINT Tools
+- theHarvester
+- Maltego
+
+---
+
+## 🌐 Common Vulnerabilities (OWASP Top 10)
+
+- SQL Injection
+- Cross-Site Scripting (XSS)
+- Broken Authentication
+- Security Misconfiguration
+- Insecure Deserialization
+- Sensitive Data Exposure
+- Access Control Issues
+- Using Components with Known Vulnerabilities
+
+---
+
+## 📊 Best Practices
+
+- Always obtain proper authorization
+- Follow legal and ethical guidelines
+- Minimize impact on production systems
+- Document every step clearly
+- Use isolated test environments when possible
+
+---
+
+## 🚀 Learning Path
+
+1. Learn networking basics (TCP/IP, DNS, HTTP)
+2. Understand Linux fundamentals
+3. Study web technologies (HTML, JS, APIs)
+4. Practice on platforms:
+   - TryHackMe
+   - Hack The Box
+   - PortSwigger Web Security Academy
+5. Learn scripting (Python, Bash)
+
+---
+
+## ⚠️ Disclaimer
+
+This document is for **educational purposes only**. Unauthorized hacking is illegal and punishable by law. Always practice ethical hacking in controlled environments.
+
+---
+
+## 📚 References
+
+- OWASP Foundation: https://owasp.org
+- Nmap Documentation: https://nmap.org
+- Metasploit: https://www.metasploit.com
+
+---
+
+⭐ If you find this helpful, consider contributing or improving it via pull requests.
