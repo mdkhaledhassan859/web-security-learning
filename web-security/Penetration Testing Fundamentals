@@ -1,10 +1,10 @@
-# 🛡️ Penetration Testing Fundamentals
+#  Penetration Testing Fundamentals
 
 This document covers the core concepts, methodology, and tools used in ethical hacking and penetration testing. It is intended for beginners who want to understand how security assessments are performed in real-world environments.
 
 ---
 
-## 📌 What is Penetration Testing?
+##  What is Penetration Testing?
 
 Penetration Testing (or **pentesting**) is the practice of simulating cyberattacks on a system, network, or application to identify security vulnerabilities before malicious attackers can exploit them.
 
@@ -12,7 +12,7 @@ It is performed with permission and follows a structured process to improve secu
 
 ---
 
-## 🎯 Goals of Penetration Testing
+##  Goals of Penetration Testing
 
 - Identify security weaknesses
 - Exploit vulnerabilities in a controlled manner
@@ -22,7 +22,7 @@ It is performed with permission and follows a structured process to improve secu
 
 ---
 
-## 🧭 Types of Penetration Testing
+##  Types of Penetration Testing
 
 ### 1. Black Box Testing
 - Tester has no prior knowledge of the system
@@ -38,7 +38,7 @@ It is performed with permission and follows a structured process to improve secu
 
 ---
 
-## 🔄 Penetration Testing Methodology
+##  Penetration Testing Methodology
 
 ### 1. Reconnaissance (Information Gathering)
 Collect information about the target.
@@ -84,7 +84,7 @@ Tools:
 - Custom scripts
 - Exploit databases
 
-⚠️ This step must be done carefully and only in authorized environments.
+ This step must be done carefully and only in authorized environments.
 
 ---
 
@@ -111,7 +111,7 @@ A good report includes:
 
 ---
 
-## 🧰 Common Penetration Testing Tools
+##  Common Penetration Testing Tools
 
 ### Network & Scanning
 - Nmap
@@ -134,7 +134,7 @@ A good report includes:
 
 ---
 
-## 🌐 Common Vulnerabilities (OWASP Top 10)
+##  Common Vulnerabilities (OWASP Top 10)
 
 - SQL Injection
 - Cross-Site Scripting (XSS)
@@ -157,7 +157,7 @@ A good report includes:
 
 ---
 
-## 🚀 Learning Path
+##  Learning Path
 
 1. Learn networking basics (TCP/IP, DNS, HTTP)
 2. Understand Linux fundamentals
@@ -170,13 +170,13 @@ A good report includes:
 
 ---
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 This document is for **educational purposes only**. Unauthorized hacking is illegal and punishable by law. Always practice ethical hacking in controlled environments.
 
 ---
 
-## 📚 References
+##  References
 
 - OWASP Foundation: https://owasp.org
 - Nmap Documentation: https://nmap.org
@@ -184,4 +184,4 @@ This document is for **educational purposes only**. Unauthorized hacking is ille
 
 ---
 
-⭐ If you find this helpful, consider contributing or improving it via pull requests.
+ If you find this helpful, consider contributing or improving it via pull requests.
