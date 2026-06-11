@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Khaled Hassan
 
-## Full Stack Software Engineer | Cyber Security Enthusiast | Aspiring Web Application Penetration Tester
+## Full Stack Software Engineer | Cyber Security Enthusiast |  Web Application Penetration Tester 
 
 I am a Software Engineer with 7+ years of experience in designing, developing, and maintaining web applications using ASP.NET, Laravel, PHP, SQL Server, and modern web technologies.
 
