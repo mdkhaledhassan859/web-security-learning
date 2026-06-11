@@ -22,14 +22,13 @@ My goal is to become a professional Web Application Penetration Tester and Appli
 ### Software Development
 
 - ASP.NET MVC
-- ASP.NET Core
-- C#
 - PHP
 - Laravel
 - JavaScript
 - AngularJS
 - SQL Server
 - MySQL
+- C#
 
 ### Cyber Security
 
