@@ -1,0 +1,57 @@
+# Active Reconnaissance in Penetration Testing
+
+Active reconnaissance is a phase in penetration testing where the tester directly interacts with the target system to gather detailed technical information. Unlike passive reconnaissance, this method generates traffic and may be detectable by the target.
+
+---
+
+##  What is Active Reconnaissance?
+
+Active reconnaissance involves probing a target system or network to identify live hosts, open ports, services, and vulnerabilities by sending packets or requests directly to the target.
+
+It is typically performed after passive recon to refine and validate collected information.
+
+---
+
+##  Objectives
+
+- Identify live hosts and systems
+- Discover open ports and services
+- Detect operating systems and versions
+- Map network architecture
+- Identify potential vulnerabilities
+
+---
+
+## ⚙️ Key Techniques
+
+### 1. Host Discovery (Ping Sweeps)
+
+Used to find active devices on a network.
+
+Methods:
+- ICMP echo requests (ping)
+- TCP/UDP probes
+- ARP scanning (local networks)
+
+Tools:
+- Nmap
+- Angry IP Scanner
+
+---
+
+### 2. Port Scanning
+
+Port scanning identifies open ports and services running on a target.
+
+Common scan types:
+- TCP SYN scan (stealth scan)
+- TCP connect scan
+- UDP scan
+- ACK scan
+
+Tool:
+- `Nmap`
+
+Example:
+```bash
+nmap -sS 192.168.1.1
