@@ -1,0 +1,37 @@
+#  Nmap Live Host Discovery
+
+Live host discovery is the process of identifying which systems are active (online) within a network. In penetration testing, this is often the first active reconnaissance step before port scanning or service enumeration.
+
+:contentReference[oaicite:0]{index=0} is one of the most widely used tools for this purpose.
+
+---
+
+##  What is Live Host Discovery?
+
+Live host discovery (also called **host enumeration**) helps determine which IP addresses in a range are currently reachable and responding.
+
+Instead of scanning all ports immediately, testers first identify "live" machines to reduce noise and improve efficiency.
+
+---
+
+##  Objectives
+
+- Identify active devices in a network
+- Reduce scope for deeper scanning
+- Avoid unnecessary traffic
+- Improve scanning speed and accuracy
+
+---
+
+##  Host Discovery Techniques in Nmap
+
+:contentReference[oaicite:1]{index=1} uses multiple methods depending on privileges and network conditions.
+
+---
+
+### 1. ICMP Echo Request (Ping Scan)
+
+The simplest method is sending ICMP echo requests.
+
+```bash
+nmap -sn 192.168.1.0/24
