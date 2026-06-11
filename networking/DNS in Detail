@@ -1,0 +1,147 @@
+# DNS in Detail
+
+## Platform
+
+TryHackMe
+
+## Category
+
+Networking / Web Security
+
+## Difficulty
+
+Easy
+
+## Objective
+
+Understand how the Domain Name System (DNS) works, how domain names are resolved to IP addresses, and why DNS knowledge is important in cybersecurity.
+
+## Why This Topic Matters
+
+Humans remember domain names such as google.com, but computers communicate using IP addresses. DNS acts as the Internet's phonebook by translating domain names into IP addresses.
+
+Understanding DNS is essential for reconnaissance, enumeration, and web application security testing.
+
+## What is DNS?
+
+DNS (Domain Name System) is a distributed system that translates domain names into IP addresses.
+
+Example:
+
+google.com → 142.250.xxx.xxx
+
+Without DNS, users would need to remember IP addresses instead of domain names.
+
+## DNS Lookup Process
+
+When a user enters a website address:
+
+1. Browser checks local cache.
+2. Operating system checks DNS cache.
+3. DNS resolver is queried.
+4. Root DNS server is contacted.
+5. TLD server is contacted.
+6. Authoritative DNS server provides the IP address.
+7. Browser connects to the web server.
+
+## Common DNS Records
+
+### A Record
+
+Maps a domain to an IPv4 address.
+
+Example:
+
+example.com → 192.168.1.10
+
+### AAAA Record
+
+Maps a domain to an IPv6 address.
+
+### CNAME Record
+
+Creates an alias for another domain.
+
+Example:
+
+www.example.com → example.com
+
+### MX Record
+
+Specifies mail servers responsible for email delivery.
+
+### NS Record
+
+Identifies authoritative name servers.
+
+### TXT Record
+
+Stores text information.
+
+Often used for:
+- SPF
+- DKIM
+- Domain verification
+
+## DNS Caching
+
+DNS responses are cached to improve performance and reduce lookup time.
+
+Benefits:
+
+- Faster browsing
+- Reduced DNS traffic
+- Lower latency
+
+## DNS Security Risks
+
+### DNS Spoofing
+
+Attackers provide fake DNS responses to redirect users.
+
+### DNS Cache Poisoning
+
+Malicious DNS records are inserted into a cache.
+
+### Subdomain Takeover
+
+Occurs when DNS points to an abandoned service.
+
+### Information Disclosure
+
+Misconfigured DNS records may expose sensitive infrastructure information.
+
+## DNS Enumeration
+
+Penetration testers often perform DNS enumeration to gather information about a target.
+
+Common discoveries:
+
+- Subdomains
+- Mail servers
+- Public services
+- Third-party integrations
+
+## Useful Tools
+
+- nslookup
+- dig
+- host
+- dnsrecon
+- amass
+- subfinder
+
+## Why DNS Matters in Pentesting
+
+DNS information helps penetration testers:
+
+- Discover attack surfaces
+- Identify subdomains
+- Map infrastructure
+- Perform reconnaissance
+
+DNS enumeration is often one of the first steps during a security assessment.
+
+## Lessons Learned
+
+This room helped me understand how DNS works, common DNS record types, DNS security risks, and the importance of DNS during reconnaissance and penetration testing.
