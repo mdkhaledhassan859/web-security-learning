@@ -1,0 +1,61 @@
+#  Windows Fundamentals – Part 1
+
+This document introduces the basic concepts of Microsoft Windows operating systems, focusing on system structure, navigation, users, permissions, and essential tools for cybersecurity and penetration testing.
+
+---
+
+##  What is Windows?
+
+Microsoft Windows is a graphical operating system developed by Microsoft. It is widely used in:
+- Personal computers
+- Enterprise environments
+- Corporate networks
+- End-user systems
+
+Windows provides both a GUI (Graphical User Interface) and CLI (Command Line Interface) for system management.
+
+---
+
+##  Why Windows Matters in Cybersecurity?
+
+- Most enterprise systems run Windows
+- Active Directory environments are Windows-based
+- Many attacks target Windows services
+- Understanding Windows helps in privilege escalation and lateral movement
+
+---
+
+##  Windows File System Structure
+
+Windows uses a hierarchical structure organized into drives.
+
+### Common Directories:
+
+
+C:
+├── Windows # System files
+├── Program Files # Installed applications (64-bit)
+├── Program Files (x86) # 32-bit applications
+├── Users # User profiles
+└── Temp # Temporary files
+
+
+---
+
+## 🖥️ Basic Navigation
+
+### Using File Explorer:
+- Navigate folders visually
+- Search files using the search bar
+- Manage files via GUI
+
+### Using Command Line (CMD):
+
+cd          # Change directory
+dir         # List files
+cls         # Clear screen
+
+Example:
+
+cd C:\Users\Public
+dir
