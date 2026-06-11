@@ -1,0 +1,53 @@
+#  Linux Fundamentals – Part 1
+
+This document introduces the basic concepts of Linux, focusing on system structure, commands, file system navigation, and essential terminal usage. It is designed for beginners in cybersecurity and penetration testing.
+
+---
+
+##  What is Linux?
+
+Linux is an open-source operating system kernel used in many distributions such as Ubuntu, Debian, Kali Linux, and CentOS.
+
+It is widely used in:
+- Servers
+- Cybersecurity tools
+- Cloud infrastructure
+- Embedded systems
+
+---
+
+##  Why Linux for Cybersecurity?
+
+- Powerful command-line interface (CLI)
+- Open-source and highly customizable
+- Strong networking tools
+- Widely used in security tools (e.g., penetration testing)
+
+---
+
+##  Linux File System Structure
+
+Linux follows a hierarchical directory structure:
+/
+├── bin # Essential binaries (commands)
+├── etc # Configuration files
+├── home # User directories
+├── var # Logs and variable data
+├── tmp # Temporary files
+├── usr # User programs
+└── root # Root user home directory
+
+
+---
+
+## Basic Linux Commands
+
+pwd        # Show current directory
+ls         # List files
+cd         # Change directory
+
+Examples:
+
+cd /home/user
+ls -la
+pwd
