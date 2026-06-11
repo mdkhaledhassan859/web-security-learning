@@ -1,0 +1,187 @@
+# Web Application Basics
+
+## Platform
+
+TryHackMe
+
+## Category
+
+Web Security
+
+## Difficulty
+
+Easy
+
+## Objective
+
+Understand the fundamental concepts of web applications, how they work, and the key components involved in client-server communication.
+
+## What is a Web Application?
+
+A web application is software that runs on a web server and is accessed through a web browser.
+
+Examples:
+
+- Facebook
+- Gmail
+- YouTube
+- Online Banking Systems
+- E-commerce Websites
+
+## How Web Applications Work
+
+Basic Flow:
+
+User → Browser → Web Server → Database
+
+1. User sends a request.
+2. The web server processes the request.
+3. The application interacts with the database if needed.
+4. The server sends a response back to the browser.
+
+## Main Components
+
+### Client
+
+The user's browser.
+
+Examples:
+
+- Google Chrome
+- Firefox
+- Microsoft Edge
+
+### Web Server
+
+Handles incoming requests.
+
+Examples:
+
+- Apache
+- Nginx
+- IIS
+
+### Application Server
+
+Processes business logic and application functionality.
+
+Examples:
+
+- ASP.NET
+- Laravel
+- Node.js
+- Django
+
+### Database
+
+Stores application data.
+
+Examples:
+
+- SQL Server
+- MySQL
+- PostgreSQL
+- MongoDB
+
+## Frontend vs Backend
+
+### Frontend
+
+The user-facing part of the application.
+
+Technologies:
+
+- HTML
+- CSS
+- JavaScript
+- Angular
+- React
+
+### Backend
+
+Handles business logic and data processing.
+
+Technologies:
+
+- ASP.NET
+- PHP Laravel
+- Node.js
+- Java Spring Boot
+
+## Authentication
+
+Authentication verifies a user's identity.
+
+Examples:
+
+- Username and Password
+- Multi-Factor Authentication (MFA)
+- OAuth
+
+## Authorization
+
+Authorization determines what actions a user can perform after authentication.
+
+Example:
+
+- Admin User
+- Regular User
+
+## Sessions and Cookies
+
+### Session
+
+Stores user state on the server.
+
+### Cookie
+
+Stores small pieces of information in the browser.
+
+Common Uses:
+
+- Login Sessions
+- User Preferences
+
+## Common Web Security Risks
+
+### SQL Injection (SQLi)
+
+Attackers manipulate database queries.
+
+### Cross-Site Scripting (XSS)
+
+Attackers inject malicious JavaScript.
+
+### Cross-Site Request Forgery (CSRF)
+
+Forces users to perform unwanted actions.
+
+### Insecure Direct Object Reference (IDOR)
+
+Allows unauthorized access to resources.
+
+### Authentication Weaknesses
+
+Poor login and password management.
+
+## Why Web Application Basics Matter
+
+Understanding web applications helps security professionals:
+
+- Identify attack surfaces
+- Understand application workflows
+- Test authentication mechanisms
+- Discover vulnerabilities
+- Perform effective penetration testing
+
+## Tools Commonly Used
+
+- Burp Suite
+- Browser Developer Tools
+- OWASP ZAP
+- Postman
+- Nmap
+
+## Lessons Learned
+
+This room introduced the core concepts of web applications, including frontend and backend architecture, authentication, sessions, databases, and common web security risks.
